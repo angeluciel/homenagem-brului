@@ -42,13 +42,6 @@ $xbold-weight: 800;
   font-style: normal;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-
 .card-section {
   display: flex;
   justify-content: center;
@@ -106,13 +99,24 @@ header {
     gap: 100px;
   }
 
-  .about {
+  .about,
+  .gallery,
+  .contacts,
+  .services {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
     justify-content: start;
     align-items: start;
+    transition: all 0.3s ease;
+  }
+
+  .about:hover,
+  .gallery:hover,
+  .contacts:hover,
+  .services:hover {
+    color: #ba8d2e;
   }
 }
 
