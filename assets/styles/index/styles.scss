@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "../header.scss";
 
 $secondary-bg: #eddada;
 $secondary-hg-bg: #d8a0a0;
@@ -85,49 +86,6 @@ img {
   border-radius: 100%;
   width: 135px;
   height: 135px;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 100px;
-  width: 100%;
-  margin-top: 32px;
-
-  .header_esquerda,
-  .header_direita {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 100px;
-  }
-
-  .about,
-  .gallery,
-  .contacts,
-  .services {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    justify-content: start;
-    align-items: start;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  .about:hover,
-  .gallery:hover,
-  .contacts:hover {
-    text-decoration: underline;
-  }
-
-  .services {
-    color: #ba8d2e;
-    font-weight: $semibold-weight;
-  }
 }
 
 .text {

@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+  width: 100%;
+  margin-top: 32px;
+
+  .header_esquerda,
+  .header_direita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 100px;
+  }
+
+  .about,
+  .gallery,
+  .contacts,
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: start;
+    align-items: start;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .about:hover,
+  .gallery:hover,
+  .contacts:hover {
+    text-decoration: underline;
+  }
+
+  .services {
+    color: #ba8d2e;
+    font-weight: $semibold-weight;
+  }
+}
